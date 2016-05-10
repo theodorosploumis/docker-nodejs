@@ -115,7 +115,7 @@ There are known best practices (see a list at [examples/tips](https://github.com
 
 ![NodeJS with Docker!](https://raw.githubusercontent.com/theodorosploumis/docker-nodejs/gh-pages/img/docker_nodejs.png)
 
-###### In this presentation I have used [oh my zsh](http://ohmyz.sh/), [reveal.js](https://github.com/hakimel/reveal.js),  
+###### Tools used: [oh my zsh](http://ohmyz.sh/), [reveal.js](https://github.com/hakimel/reveal.js) and docker 1.11.
 
 ---
 
