@@ -4,16 +4,15 @@
 
 #### [NodeJS Meetup Thessaloniki](http://www.meetup.com/Thessaloniki-Node-js-Meetup/), June 2016
 
+_________________
 ###### [TheodorosPloumis.com](http://www.theodorosploumis.com/en) / [@theoploumis](twitter.com/theoploumis)
-________________________
-
 ###### Get them: [online presentation](http://theodorosploumis.github.io/docker-nodejs/) / [source code](https://github.com/theodorosploumis/docker-nodejs) / [docker image](https://hub.docker.com/r/tplcom/docker-nodejs/)
 
 ---
 
 ### Let me ask you
 
-- Who knows about [Docker]([docker.com](http://docker.com))?
+- Who knows about [Docker](http://docker.com)?
 - Who uses Docker for development?
 - Who uses Docker in production?
 - Who tried but could not do it?
@@ -40,7 +39,7 @@ ________________________
  - Secure
  - Lightweight (save disk & CPU)
  - Open Source
- - Portable software
+ - Portability
  - Microservices and integrations (APIs)
  - Simplify DevOps
  - Version control capabilities
@@ -76,9 +75,39 @@ docker run -i -t ubuntu /bin/bash
 
 ### Public images and Dockerfiles
 
+Let's explore [hub.docker.com](https://hub.docker.com)
+
+ - [node/0.10.45](https://github.com/nodejs/docker-node/blob/5e058d36cc69303d1f62d424615fa03e050f20ef/0.10/Dockerfile)
+ - [node/slim](https://hub.docker.com/r/library/node/tags/slim/)
+ - [jprjr/tinynode](https://hub.docker.com/r/jprjr/tinynode/)
+ - [shawnzhu/ruby-nodejs](https://hub.docker.com/r/shawnzhu/ruby-nodejs/)
+ - [scratch](https://hub.docker.com/_/scratch/)
+ - [skgtech/website](https://github.com/skgtech/skgtech.io-docker/blob/master/Dockerfile)
+
+###### Topics: basics, images, Dockerfile, hub
+
 ---
 
-### Try NodeJS apps
+### Try apps and software
+
+```
+// Try mean.io stack. Open localhost:8010
+docker pull gbevan/meanio
+docker run -d -p 8010:3000 --name meanio gbevan/meanio
+
+// Try Nagios. Open localhost:8120/nagios (user: nagiosadmin pass: admin)
+docker pull quantumobject/docker-nagios
+docker run -d -p 8125:25 -p 8120:80 --name nagios quantumobject/docker-nagios
+
+// Try Wekan. Open localhost:8040
+docker pull mongo
+docker pull mquandalle/wekan
+docker run -d --name wekan-db mongo
+docker run -d --link "wekan-db:db" \
+           -e "MONGO_URL=mongodb://db" -p 8040:80 mquandalle/wekan
+
+```
+###### Topics: run, link, ports, containers
 
 ---
 
@@ -115,7 +144,7 @@ There are known best practices (see a list at [examples/tips](https://github.com
 
 ![NodeJS with Docker!](https://raw.githubusercontent.com/theodorosploumis/docker-nodejs/gh-pages/img/docker_nodejs.png)
 
-###### Tools used: [oh my zsh](http://ohmyz.sh/), [reveal.js](https://github.com/hakimel/reveal.js) and docker 1.11.
+###### Tools used: [oh my zsh](http://ohmyz.sh/), [reveal.js](https://github.com/hakimel/reveal.js) and [docker 1.11.1](https://github.com/docker/docker/releases/tag/v1.11.1).
 
 ---
 
