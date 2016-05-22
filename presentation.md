@@ -43,6 +43,7 @@ _________________
  - Microservices and integrations (APIs)
  - Simplify DevOps
  - Version control capabilities
+ - Docker: 1-process-per-container && NodeJS: single-process
 
 ---
 
@@ -66,10 +67,11 @@ docker run -i -t ubuntu /bin/bash
 
  1. Public [NodeJS](https://hub.docker.com/search/?page=1&q=nodejs&starCount=0) images and Dockerfiles
  2. Try NodeJS* apps
- 3. Docker for development
- 4. Test with Docker
- 5. CI/CD
- 6. Scaling NodeJS apps
+ 3. Dockerizing NodeJS
+ 4. Docker for development
+ 5. Test with Docker
+ 6. CI/CD
+ 7. Scaling NodeJS apps
 
 ---
 
@@ -111,6 +113,33 @@ docker run -d --link "wekan-db:db" \
 
 ---
 
+### Dockerizing NodeJS
+
+```
+FROM nodesource/jessie:0.12.13
+
+# Set the NodeJS environment to dev (vs production)
+ENV NODE_ENV dev
+
+# cache package.json and node_modules to speed up builds
+ADD package.json package.json
+RUN npm install
+
+# Add your local files to the image
+ADD . /path/to/app
+
+# Setup the workdir
+WORKDIR /path/to/app
+
+# Expose ports
+EXPOSE 3000
+
+CMD ["npm","start"]
+```
+###### Topics: npm, cache layers
+
+---
+
 ### Using Docker for NodeJS development
 
 ---
@@ -137,6 +166,7 @@ There are known best practices (see a list at [examples/tips](https://github.com
 - Full stack Images vs 1 process per Container
 - Create your private registry
 - Create shortcut commands
+- Volume database and code source to save state
 
 ---
 
