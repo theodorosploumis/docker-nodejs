@@ -84,7 +84,7 @@ Let's explore [hub.docker.com](https://hub.docker.com)
  - [jprjr/tinynode](https://hub.docker.com/r/jprjr/tinynode/)
  - [shawnzhu/ruby-nodejs](https://hub.docker.com/r/shawnzhu/ruby-nodejs/)
  - [scratch](https://hub.docker.com/_/scratch/)
- - [skgtech/website](https://github.com/skgtech/skgtech.io-docker/blob/master/Dockerfile)
+ - [nodesource explicit images](https://github.com/nodesource/docker-node#usage)
 
 ###### Topics: basics, images, Dockerfile, hub
 
