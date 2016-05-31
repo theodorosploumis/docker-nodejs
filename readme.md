@@ -142,9 +142,20 @@ CMD ["npm","start"]
 
 ### Using Docker for NodeJS development
 
+Some basic NodeJS-specific tips
+
+ - Keep the dependencies out of your app
+ - Think of (micro)services
+ - Use start scripts for containers with executable
+ - Use data only containers and share volumes
+ - Keep images small and version-specific
+ - In .dockerignore exclude ```.git, .gitignore, node_modules/```
+
 ---
 
-### Test with NodeJS and Docker
+### Using Docker for NodeJS - Example 1
+
+
 
 ---
 
