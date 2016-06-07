@@ -96,10 +96,10 @@ docker run -i -t ubuntu /bin/bash
 
 ### Agenda
 
-- Explore docker cli
 - Public Dockerfiles
 - The docker hub
 - Try NodeJS* apps
+- Explore docker cli
 - Dockerizing NodeJS
 - Using Docker with NodeJS
 
