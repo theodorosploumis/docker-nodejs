@@ -6,8 +6,8 @@
 
 _________________
 ###### [TheodorosPloumis.com](http://www.theodorosploumis.com/en) / [@theoploumis](twitter.com/theoploumis)
-###### Get them: [online presentation](http://theodorosploumis.github.io/docker-nodejs/) / [source code](https://github.com/theodorosploumis/docker-nodejs) / [docker image](https://hub.docker.com/r/tplcom/docker-nodejs/)
-
+###### Get them: [online presentation](http://theodorosploumis.github.io/docker-nodejs/) / [source code](https://github.com/theodorosploumis/docker-nodejs) / [docker image](https://hub.docker.com/r/tplcom/docker-nodejs/) / [video](https://www.youtube.com/watch?v=ALEE6oTUQOE)
+###### Share under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
 ---
 
 ### Let me ask you
@@ -98,7 +98,6 @@ docker run -i -t ubuntu /bin/bash
 - Try NodeJS* apps
 - Dockerizing NodeJS
 - Using Docker with NodeJS
-- Scaling NodeJS apps
 
 ---
 
@@ -206,11 +205,17 @@ ADD . /path/to/app
 # Setup the workdir
 WORKDIR /path/to/app
 
+# Optional volume the app
+VOLUME /path/to/app
+
 # Expose ports
 EXPOSE 3000
 
 CMD ["npm","start"]
 ```
+
+Other basic examples: [1](https://docs.docker.com/engine/examples/nodejs_web_app/).
+
 ###### Topics: npm, cache layers
 
 ---
@@ -235,7 +240,7 @@ docker-compose up redis
 
 ```
 
-Other useful examples [1](https://github.com/docker/example-voting-app), [2](https://github.com/b00giZm/docker-compose-nodejs-examples), [3](https://github.com/thess-docker/nodejs-loadbalanced-dockercompose).
+Other useful examples [1](https://github.com/docker/example-voting-app), [2](https://github.com/thess-docker/docker-compose-nodejs), [3](https://github.com/thess-docker/nodejs-loadbalanced-dockercompose), [4](https://github.com/thess-docker/docker-nodejs-postgres)
 
 ###### Topics: docker-compose, ci, testing
 
@@ -275,16 +280,33 @@ There are known best practices (get a list at [examples/tips](https://github.com
 - [docker node tester, dnt](https://www.npmjs.com/package/dnt)
 - [generator-docker](https://www.npmjs.com/package/generator-docker)
 
+The [Docker ecosystem](http://comp.photo777.org/wp-content/uploads/2015/09/Docker-ecosystem-8.5.1.pdf) grows exponentially.
+
 ---
 
-### Questions?
+### Instead of Resources
+
+- Join [beta.docker.com](https://beta.docker.com/) now!
+- [Awesome Docker](https://github.com/veggiemonk/awesome-docker) (list of Docker resources & projects)
+- [Docker cheat sheet](https://github.com/wsargent/docker-cheat-sheet)
+- [Docker in Practice](https://www.manning.com/books/docker-in-practice), [The Docker Book](http://www.dockerbook.com/) (books)
+- [Docker aliases/shortcuts](https://github.com/theodorosploumis/docker-presentation/tree/gh-pages/examples/shortcuts/docker-aliases.sh)
+- [Docker introduction presentation](http://theodorosploumis.github.io/docker-presentation/)
+
+---
+
+### Questions
+
+res.send('[Feedback](https://goo.gl/T7rE1o)');
 
 ![NodeJS with Docker!](https://raw.githubusercontent.com/theodorosploumis/docker-nodejs/gh-pages/img/docker_nodejs.png)
 
-###### Tools used: [oh my zsh](http://ohmyz.sh/), [reveal.js](https://github.com/hakimel/reveal.js) and [docker 1.11.1](https://github.com/docker/docker/releases/tag/v1.11.1).
+###### Tools used: [oh my zsh](http://ohmyz.sh/), [reveal.js](https://github.com/hakimel/reveal.js), [Simple Docker UI for Chrome](https://github.com/felixgborrego/docker-ui-chrome-app), [wharfee](https://github.com/j-bennet/wharfee), [dry](https://github.com/moncho/dry) and [docker 1.11.1](https://github.com/docker/docker/releases/tag/v1.11.1).
 
 ---
 
-### Bonus!
+### Wait, Bonus!
 
-> Get the [SKGTech.io docker image](https://github.com/skgtech/skgtech.io-docker)
+> [SKGTech.io](http://skgtech.io) has a docker image now.
+
+> Use a [docker-compose.yml]() to contribute
