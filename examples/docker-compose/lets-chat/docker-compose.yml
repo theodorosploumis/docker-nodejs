@@ -1,0 +1,25 @@
+# Let's Chat: Docker Compose
+# https://docs.docker.com/compose/
+#
+# Usage: docker-compose up
+
+app1:
+  image: sdelements/lets-chat:latest
+  links:
+    - mongo
+  ports:
+    - 8111:8080
+    - 5111:5222
+  environment:
+    - VIRTUAL_HOST=one.docker-thess.com
+app2:
+  image: sdelements/lets-chat:latest
+  links:
+    - mongo
+  ports:
+    - 8222:8080
+    - 5222:5222
+  environment:
+    - VIRTUAL_HOST=two.docker-thess.com
+mongo:
+  image: mongo:latest
