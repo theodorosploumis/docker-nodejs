@@ -5,9 +5,13 @@
 #### [NodeJS Meetup Thessaloniki](http://www.meetup.com/Thessaloniki-Node-js-Meetup/events/231574221/), June 2016
 
 _________________
+
 ###### [TheodorosPloumis.com](http://www.theodorosploumis.com/en) / [@theoploumis](twitter.com/theoploumis)
+
 ###### Get them: [online presentation](http://theodorosploumis.github.io/docker-nodejs/) / [source code](https://github.com/theodorosploumis/docker-nodejs) / [docker image](https://hub.docker.com/r/tplcom/docker-nodejs/) / [video](https://www.youtube.com/watch?v=ALEE6oTUQOE)
+
 ###### Share under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
+
 ---
 
 ### Let me ask you
@@ -308,4 +312,4 @@ res.send('[Feedback](https://goo.gl/T7rE1o)');
 
 ### Wait, Bonus!
 
-> [SKGTech.io](http://skgtech.io) has a docker image and a [docker-compose.yml]() file now.
+> [SKGTech.io](http://skgtech.io) has a docker image and a **docker-compose.yml** file now.
