@@ -268,6 +268,7 @@ There are known best practices (get a list at [examples/tips](https://github.com
 - Use data only containers and share volumes
 - Keep images small and version-specific
 - In .dockerignore exclude ```.git, .gitignore, node_modules/```
+- Prefer ```ENTRYPOINT ["npm", "start"]```
 
 ---
 
@@ -307,6 +308,4 @@ res.send('[Feedback](https://goo.gl/T7rE1o)');
 
 ### Wait, Bonus!
 
-> [SKGTech.io](http://skgtech.io) has a docker image now.
-
-> Use a [docker-compose.yml]() to contribute
+> [SKGTech.io](http://skgtech.io) has a docker image and a [docker-compose.yml]() file now.
