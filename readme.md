@@ -184,6 +184,8 @@ docker rm [CONTAINER_ID]
 
 ```
 
+###### Topics: dry, wharfee, docker simple ui, cli
+
 ---
 
 ### Dockerizing NodeJS
