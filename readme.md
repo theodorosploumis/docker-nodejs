@@ -102,43 +102,12 @@ docker run -i -t ubuntu /bin/bash
 
 ### Agenda
 
-- Public Dockerfiles
-- The docker hub
 - Try NodeJS* apps
+- The docker hub
+- Public Dockerfiles
 - Explore docker cli
 - Dockerizing NodeJS
 - Using Docker with NodeJS
-
----
-
-### Public Dockerfiles
-
-Popular Dockerfiles from [hub.docker.com](https://hub.docker.com)
-
-- A list of [NodeJS](https://hub.docker.com/search/?page=1&q=nodejs&starCount=0) public images
-- [node/0.10.45](https://github.com/nodejs/docker-node/blob/5e058d36cc69303d1f62d424615fa03e050f20ef/0.10/Dockerfile)
-- [node/slim](https://hub.docker.com/r/library/node/tags/slim/)
-- [jprjr/tinynode](https://hub.docker.com/r/jprjr/tinynode/)
-- [shawnzhu/ruby-nodejs](https://hub.docker.com/r/shawnzhu/ruby-nodejs/)
-- [scratch](https://hub.docker.com/_/scratch/)
-- [nodesource explicit images](https://github.com/nodesource/docker-node#usage)
-
-Documented [Dockerfile reference](https://github.com/theodorosploumis/docker-presentation/blob/gh-pages/examples/dockerfile/Dockerfile).
-
-###### Topics: basics, images, Dockerfile, hub
-
----
-
-### The docker hub
-
-- [hub.docker.com](https://hub.docker.com/)
-- [REST API v1](https://docs.docker.com/v1.6/reference/api/docker-io_api/)
-- [REST API v2](https://docs.docker.com/registry/spec/api/)
-- [page of readytalk/nodejs](https://hub.docker.com/r/readytalk/nodejs/)
-- [images of readytalk/nodejs, v1](https://registry.hub.docker.com/v1/repositories/readytalk/nodejs/images)
-- [info about tplcom namespace. v2](https://registry.hub.docker.com/v2/repositories/tplcom/docker-nodejs/)
-
-###### Topics: hub, registry, public images
 
 ---
 
@@ -162,6 +131,38 @@ docker run -d --link "wekan-db:db" \
 
 ```
 ###### Topics: run, link, ports, containers
+
+---
+
+### The docker hub
+
+- [hub.docker.com](https://hub.docker.com/)
+- [page of readytalk/nodejs](https://hub.docker.com/r/readytalk/nodejs/)
+- [REST API v1](https://docs.docker.com/v1.6/reference/api/docker-io_api/)
+- [REST API v2](https://docs.docker.com/registry/spec/api/)
+- [images of readytalk/nodejs, v1](https://registry.hub.docker.com/v1/repositories/readytalk/nodejs/images)
+- [info about tplcom namespace. v2](https://registry.hub.docker.com/v2/repositories/tplcom/docker-nodejs/)
+- Let's upload [theodorosploumis/php-chat](https://github.com/theodorosploumis/php-chat) to the hub
+
+###### Topics: hub, registry, public images
+
+---
+
+### Public Dockerfiles
+
+Popular Dockerfiles from [hub.docker.com](https://hub.docker.com)
+
+- A list of [NodeJS](https://hub.docker.com/search/?page=1&q=nodejs&starCount=0) public images
+- [node/0.10.45](https://github.com/nodejs/docker-node/blob/5e058d36cc69303d1f62d424615fa03e050f20ef/0.10/Dockerfile)
+- [node/slim](https://hub.docker.com/r/library/node/tags/slim/)
+- [jprjr/tinynode](https://hub.docker.com/r/jprjr/tinynode/)
+- [shawnzhu/ruby-nodejs](https://hub.docker.com/r/shawnzhu/ruby-nodejs/)
+- [scratch](https://hub.docker.com/_/scratch/)
+- [nodesource explicit images](https://github.com/nodesource/docker-node#usage)
+
+Documented [Dockerfile reference](https://github.com/theodorosploumis/docker-presentation/blob/gh-pages/examples/dockerfile/Dockerfile).
+
+###### Topics: basics, images, Dockerfile, hub
 
 ---
 
