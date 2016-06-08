@@ -94,6 +94,12 @@ docker run -i -t ubuntu /bin/bash
 
 ---
 
+### Docker flow diagram
+
+![Docker architecture](https://docs.docker.com/engine/article-img/architecture.svg)
+
+---
+
 ### Agenda
 
 - Public Dockerfiles
@@ -244,7 +250,7 @@ docker-compose up redis
 
 ```
 
-Other useful examples [1](https://github.com/docker/example-voting-app), [2](https://github.com/thess-docker/docker-compose-nodejs), [3](https://github.com/thess-docker/nodejs-loadbalanced-dockercompose), [4](https://github.com/thess-docker/docker-nodejs-postgres)
+Other useful examples [1](https://github.com/thess-docker/example-voting-app), [2](https://github.com/thess-docker/docker-compose-nodejs), [3](https://github.com/thess-docker/nodejs-loadbalanced-dockercompose), [4](https://github.com/thess-docker/docker-nodejs-postgres)
 
 ###### Topics: docker-compose, ci, testing
 
