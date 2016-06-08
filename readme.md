@@ -83,14 +83,14 @@ docker run -i -t ubuntu /bin/bash
 
 ### The Docker terminology
 
-- docker engine
-- docker client
-- docker machine
-- docker image
-- docker container
-- docker-compose
-- docker swarm
-- docker distribution
+- (docker) engine
+- client
+- machine
+- image
+- container
+- compose
+- swarm
+- distribution
 
 ---
 
