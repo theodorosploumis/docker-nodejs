@@ -23,7 +23,7 @@ _________________
 
 ---
 
-### What is Docker (v1.11)
+### What is Docker
 
 > Docker is an open platform for developing, shipping, and running applications.
 
@@ -312,7 +312,7 @@ res.send('[Feedback](https://goo.gl/T7rE1o)');
 
 ![NodeJS with Docker!](https://raw.githubusercontent.com/theodorosploumis/docker-nodejs/gh-pages/img/docker_nodejs.png)
 
-###### Tools used: [oh my zsh](http://ohmyz.sh/), [reveal.js](https://github.com/hakimel/reveal.js), [Simple Docker UI for Chrome](https://github.com/felixgborrego/docker-ui-chrome-app), [wharfee](https://github.com/j-bennet/wharfee), [dry](https://github.com/moncho/dry) and [docker 1.11.1](https://github.com/docker/docker/releases/tag/v1.11.1).
+###### Tools used: [oh my zsh](http://ohmyz.sh/), [reveal.js](https://github.com/hakimel/reveal.js), [Simple Docker UI for Chrome](https://github.com/felixgborrego/docker-ui-chrome-app), [wharfee](https://github.com/j-bennet/wharfee), [dry](https://github.com/moncho/dry), [docker compose 1.7.1](https://github.com/docker/compose/releases/tag/1.7.1), [docker 1.11.1](https://github.com/docker/docker/releases/tag/v1.11.1).
 
 ---
 
