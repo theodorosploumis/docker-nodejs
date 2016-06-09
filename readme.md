@@ -1,6 +1,6 @@
 ![Docker logo](https://raw.githubusercontent.com/theodorosploumis/docker-nodejs/gh-pages/img/docker_logo.png)
 
-## Docker for NodeJS
+## NodeJS.require(Docker)
 
 #### [NodeJS Meetup Thessaloniki](http://www.meetup.com/Thessaloniki-Node-js-Meetup/events/231574221/), June 2016
 
@@ -299,6 +299,7 @@ The [Docker ecosystem](http://comp.photo777.org/wp-content/uploads/2015/09/Docke
 ### Instead of Resources
 
 - Join [beta.docker.com](https://beta.docker.com/) now!
+- Subscribe to the official [Newsletter](https://www.docker.com/newsletter-subscription)
 - [Awesome Docker](https://github.com/veggiemonk/awesome-docker) (list of Docker resources & projects)
 - [Docker cheat sheet](https://github.com/wsargent/docker-cheat-sheet)
 - [Docker in Practice](https://www.manning.com/books/docker-in-practice), [The Docker Book](http://www.dockerbook.com/) (books)
@@ -309,7 +310,7 @@ The [Docker ecosystem](http://comp.photo777.org/wp-content/uploads/2015/09/Docke
 
 ### Questions
 
-res.send('[Feedback](https://goo.gl/T7rE1o)');
+you.send('[Feedback](https://goo.gl/T7rE1o)');
 
 ![NodeJS with Docker!](https://raw.githubusercontent.com/theodorosploumis/docker-nodejs/gh-pages/img/docker_nodejs.png)
 
